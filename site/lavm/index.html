@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Module 1- Linux and VMs - The Command Line Corral</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Module 1- Linux and VMs";
+    var mkdocs_page_input_path = "lavm.md";
+    var mkdocs_page_url = "/lavm/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> The Command Line Corral</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Module 1- Linux and VMs</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#module-1-linux-virtual-machines">Module 1: Linux &amp; Virtual Machines</a></li>
+                
+                    <li><a class="toctree-l4" href="#why-open-source">Why Open Source?</a></li>
+                
+                    <li><a class="toctree-l4" href="#virtual-machines">Virtual Machines</a></li>
+                
+                    <li><a class="toctree-l4" href="#now-its-time-to-learn-some-things">Now it's TIME TO LEARN SOME THINGS</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../bash/">Module 2- Bash Scripting</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dm/">Module 3- Discrete Mathematics</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../programming/">Module 4- Programming</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">The Command Line Corral</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Module 1- Linux and VMs</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="module-1-linux-virtual-machines">Module 1: Linux &amp; Virtual Machines</h1>
+<p>The first step to getting underway with learning to be a console cowboy is to familiarize yourself with the Linux operating system.  While it is possible to undertake 
+development work on Windows, it is much more difficult than doing so on Linux, as each individual component and dependency must be manually installed, with no sort of 
+automatic compatibility checking.  Over time, the more components and libraries you add, the harder it is to keep them working together, until you find yourself 
+troubleshooting Windows more than your code.  Linux also has the advantage of being written by programmers for programmers, so it is deeply customizable and offers many 
+utilities for controlling what it does at a very fine-grained level.  The las, most important difference between Windows and Linux is that it Linux is comprised of 
+freely-available "open source" software.</p>
+<h2 id="why-open-source">Why Open Source?</h2>
+<p>Open source software has a couple big advantages over "proprietary" or "licensed" software:</p>
+<ol>
+<li>
+<p>It's free!  You won't ever run into a situation where you need to pay for a software package on Linux.</p>
+</li>
+<li>
+<p>The source code is publicly available.  As you get more experience with the concepts in this course, you will probably run into situations where you would like to 
+learn how a particular application that you use does what it does, or to customize the application itself.  This isn't really something you can do with proprietary 
+software (unless said software comes bundled with tools for doing so), but when it comes to open source software, it's quite easy to do (provided that you can read and 
+write the programming language that the application is written in).</p>
+</li>
+<li>
+<p>Lots of community support exists.  In the world of proprietary software, if you run into an issue, it can be very difficult to get in touch with the people who 
+developed the software for help.  When it comes to open source software, simply googling an error message will return a huge number of articles and discussions about the 
+issue, often with step-by-step instructions for fixing it.  Most developers also publish huge piles of documentation for their software on the internet, which you can 
+refer to for help.  If all of this this fails for some reason, you can usually get directly in touch with the developers directly via email/IM, and they can probably 
+help you.</p>
+</li>
+</ol>
+<h2 id="virtual-machines">Virtual Machines</h2>
+<p>Now, you might be thinking that you'll have to install Linux on its own dedicated machine, which you might not have at the moment.  Thankfully, the technology exists 
+to run Linux inside of the Windows operating system using something called a 'virtual machine.'  A virtual machine (VM) is an emulation of a computer system. Virtual 
+machines are based on computer architectures and provide functionality of a physical computer. They also isolate the OS from the machine running the VM, so if you break 
+something beyond repair (which you probably will at some point), you'll only have to fix the VM rather than the whole computer.</p>
+<p>Before you can get started with this module, you're going to need two things- a hypervisor and a Linux ISO.</p>
+<h3 id="hypervisor-installation">Hypervisor Installation</h3>
+<p>A hypervisor or virtual machine monitor (VMM) is computer software, firmware or hardware that creates and runs virtual machines. A computer on which a hypervisor runs 
+one or more virtual machines is called a host machine, and each virtual machine is called a guest machine. The hypervisor presents the guest operating systems with a 
+virtual operating platform and manages the execution of the guest operating systems. Multiple instances of a variety of operating systems may share the virtualized 
+hardware resources: for example, Linux, Windows, and macOS instances can all run on a single physical x86 machine.</p>
+<p>The hypervisor that I prefer the most is VirtualBox, which you can download for free <a href="http://download.virtualbox.org/virtualbox/5.1.22/VirtualBox-5.1.22-115126-Win.exe">here.</a></p>
+<p>Go ahead and install it, then take some time to read through the documentation <a href="https://www.virtualbox.org/manual/ch01.html">here</a> and 
+<a href="https://www.virtualbox.org/manual/ch04.html">here.</a></p>
+<h3 id="iso-installation">ISO Installation</h3>
+<p>Your next step is to acquire an ISO file (basically a virtual "installation CD") for the Linux distribution you would like to use.  While there are many different kinds 
+of Linux distributions (or 'distros'), the largest and most popular is called Ubuntu, and I would recommend that you start with it because there is such a large user 
+base that you should be able to find information about just about any issue you run into while using it just by searching the internet.</p>
+<p>You can acquire the <a href="https://www.ubuntu.com/download/desktop/contribute?version=16.04.2&amp;architecture=amd64">16.04 LTS (long-term service/support) Ubuntu ISO here.</a></p>
+<p>Once you've downloaded it, go ahead and install it on VirtualBox, <a href="https://linus.nci.nih.gov/bdge/installUbuntu.html">following this guide (including the Guest Additions bit).</a></p>
+<h2 id="now-its-time-to-learn-some-things">Now it's TIME TO LEARN SOME THINGS</h2>
+<p>Once you've gotten everything installed, start working through <a href="https://www.youtube.com/watch?v=bju_FdCo42w&amp;list=PLtK75qxsQaMLZSo7KL-PmiRarU7hrpnwK">this Linux sysadmin 
+course.</a> The course will give you a complete introduction to all of the concepts 
+that you'll need to learn your way around Linux.  </p>
+<p>If at this point you feel like you might want to do a deep-dive into a Linux book, start with the free ict@innovation <a href="https://www.linuxcertification.co.za/sites/default/files/LPIManual_v_09.pdf">Training Guide on
+Linux System Administration</a>, or the more in-depth (but still free) FTA <a href="http://ftacademy.org/sites/ftacademy.org/files/materials/fta-m2-admin_gnulinux-v1.pdf">GNU/Linux Advanced Administration</a> book.</p>
+<p>If you still find yourself wanting even more information, you can start by tracking down one of the following books:</p>
+<p><a href="https://www.amazon.com/How-Linux-Works-Superuser-Should/dp/1593275676">How Linux Works, 2nd Edition: What Every Superuser Should Know</a></p>
+<p><a href="https://www.amazon.com/UNIX-Linux-System-Administration-Handbook/dp/0131480057">UNIX and Linux System Administration Handbook, 4th Edition</a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../bash/" class="btn btn-neutral float-right" title="Module 2- Bash Scripting">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../bash/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

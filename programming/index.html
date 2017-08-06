@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Module 4- Programming - The Command Line Corral</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../site/css/highlight.css" rel="stylesheet">
+  <link href="../site/css/theme.css" rel="stylesheet">
+  <link href="../site/css/theme_extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Module 4- Programming";
+    var mkdocs_page_input_path = "programming.md";
+    var mkdocs_page_url = "/programming/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+  <script src="../site/js/highlight.pack.js"></script>
+  <script src="../site/js/jquery-2.1.1.min.js"></script>
+  <script src="../site/js/modernizr-2.8.3.min.js"></script>
+  <script src="../site/js/theme.js"></script>
+  <script src="../site/mkdocs/js/lunr-0.5.7.min.js"></script>
+  <script src="../site/mkdocs/js/mustache.min.js"></script>
+  <script src="../site/mkdocs/js/require.js"></script>
+  <script src="../site/mkdocs/js/search.js"></script>
+  <script src="../site/mkdocs/js/text.js"></script>
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> The Command Line Corral</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../lavm/">Module 1- Linux and VMs</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../bash/">Module 2- Bash Scripting</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../dm/">Module 3- Discrete Mathematics</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Module 4- Programming</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#module-4-programming">Module 4: Programming</a></li>
+                
+                    <li><a class="toctree-l4" href="#git-started">'Git' Started</a></li>
+                
+                    <li><a class="toctree-l4" href="#now-you-are-ready-to-learn-to-code-with-ruby">Now You are Ready to 'Learn to Code' with Ruby</a></li>
+                
+                    <li><a class="toctree-l4" href="#adding-rails-to-your-ruby">Adding Rails to your Ruby</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">The Command Line Corral</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Module 4- Programming</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="module-4-programming">Module 4: Programming</h1>
+<h2 id="git-started">'Git' Started</h2>
+<p>Before you get started with this part, I would recommend that you set up a <a href="https://www.github.com">Github account</a> and install git on your virtual Linux machine (if it isn't 
+installed already).  Git is essentially a system for 'saving' entire folders and tracking changes that you make to files.  This might not seem important when you're 
+dealing with smaller applications, but as you start to make things that are more complex, it can be a very valuable tool for making sure that you don't lose your hard 
+work.  Github is a free online service that you can use in conjunction with git to store your files on the cloud, share them, and access them from any machine.  If you 
+ever end up applying for a job as a developer, companies will usually ask you for your github account so that they can look at the projects you've worked on in the past 
+and get a sense of your skill level- think of it kind of like a portfolio of your work.  You can also use your github to store assignments that you've worked on, papers 
+you've written, classroom notes, or just about anything else.  It's also really neat to be able to look back over your past code and see how far you've progressed since 
+you've started.  Overall, it's an extremely useful and powerful tool!</p>
+<p>There's a great interactive tutorial for learning git that you can find <a href="https://try.github.io/">here.</a></p>
+<h2 id="now-you-are-ready-to-learn-to-code-with-ruby">Now You are Ready to 'Learn to Code' with Ruby</h2>
+<p>There are a zillion programming languages out there, and all of them have their particular advantages and disadvantages.  However, the important thing to remember (and 
+something that teachers may not always tell you) is that once you've learned one programming language, learning others is pretty easy by comparison.  Because of this, I 
+generally recommend that people learn Ruby as their first language, because its grammar and syntax are very intuitive and easy to understand.  Learning Ruby also has the 
+advantage of giving you experience in a language that is in high demand, because it is used by many companies to develop complex websites and services using the Ruby on 
+Rails framework.</p>
+<p><a href="https://www.youtube.com/watch?v=Dji9ALCgfpM">This video will give you a good introduction to the Ruby language and the kinds of things it can do</a>.</p>
+<p>In my opinion, the best book on Ruby ever written is "Why's Poignant Guide to Ruby-" it's basically a comic book that teaches you Ruby, and you can find it 
+<a href="http://poignant.guide/book/chapter-1.html">here.</a></p>
+<p>You should also take a look at "Learn Ruby the Hard Way," which you can find <a href="https://learnrubythehardway.org/book/preface.html">here</a>.  It's not nearly as fun as Why's 
+Poignant Guide, but it does go into more detail and includes more exercises for you to work on.</p>
+<p>If you ever need to know more about a particular class or function in Ruby, you can also search the official Ruby documentation <a href="https://ruby-doc.org/core-2.4.1/">here</a>.</p>
+<h2 id="adding-rails-to-your-ruby">Adding Rails to your Ruby</h2>
+<p>Now that you're a seasoned Ruby veteran, it's time to learn the web framework for Ruby, called "Ruby on Rails," "Rails," or "RoR" for short. This framework will allow 
+you to develop powerful, fully-featured websites with the Ruby language.</p>
+<p>You can get a basic introduction to Rails through <a href="https://www.codecademy.com/courses/learn-rails/lessons/start/exercises/start-hello-rails?action=lesson_resume">Codeacademy's free Rails 
+course</a>.</p>
+<p>Once you've finished that, it's time to tackle <strong>the definitive guide to Rails-</strong> Michael Hartl's <a href="https://www.railstutorial.org/book/">"The Ruby on Rails Tutorial."</a></p>
+<p>This tutorial is not for the faint of heart- it may take you weeks to complete, but if you can make it through, you've got what it takes to be a web developer.</p>
+<p>After you've completed Hartl's tutorial, there's just one more step in between you and Ruby greatness: the <a href="http://rubykoans.com">Ruby Koans</a>.  The Koans are intended to 
+teach you about Test Driven Development (TDD), which is a very in-demand skill in the development industry- most junior developers begin their careers writing tests, and 
+if you can do it in the wild, you can do it in an office.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../dm/" class="btn btn-neutral" title="Module 3- Discrete Mathematics"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../dm/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+
+</body>
+</html>
