@@ -1,0 +1,8 @@
+site_name: The Command Line Corral
+pages:
+    - Home: index.md
+    - Module 1- Linux and VMs: lavm.md
+    - Module 2- Bash Scripting: bash.md
+    - Module 3- Discrete Mathematics: dm.md
+    - Module 4- Programming: programming.md
+theme: readthedocs
